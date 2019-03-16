@@ -1,0 +1,59 @@
+line {
+  stroke: #3DC23F;
+}
+
+#chartContainer {
+  //transition: all 0.2s linear 0s;
+  transform: scale(1, -1);
+  height: 400px;
+  width: 500%;
+  position: relative;
+}
+.animation {
+  transition: all 0.2s linear 0s;
+}
+text {
+  transform: scale(1, -1);
+}
+.chart-wrapper {
+  height: 400px;
+}
+
+#scrollViewer {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+#scrollViewer #chartContainer-1 {
+  transform: scale(1, -1);
+  width: 100% !important;
+  height: 100%;
+
+}
+
+#moveCarriage {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  opacity: 0.1;
+  cursor: pointer;
+  z-index: 50;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#leftCarriage, #rightCarriage {
+  width: 20px;
+  z-index: 100;
+  cursor: col-resize;
+  background: rebeccapurple;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
