@@ -9,12 +9,15 @@ line {
   width: 500%;
   position: relative;
 }
+
 .animation {
   transition: all 0.2s linear 0s;
 }
+
 text {
   transform: scale(1, -1);
 }
+
 .chart-wrapper {
   height: 400px;
 }
@@ -57,3 +60,45 @@ html, body {
   height: 100%;
   overflow: hidden;
 }
+
+#dateContainer {
+  transform: scale(1, -1);
+  height: 20px;
+}
+
+text {
+  opacity: 0;
+  transition: opacity 0.2s linear 0s;
+}
+
+text:last-child {
+  opacity: 1;
+}
+
+.n8 {
+  text:nth-child(8n + 1) {
+    opacity: 1;
+  }
+}
+
+
+.n4 {
+  text:nth-child(4n + 1) {
+    opacity: 1;
+  }
+}
+
+
+.n2 {
+  text:nth-child(2n + 1) {
+    opacity: 1;
+  }
+}
+
+.n1 {
+  text:nth-child(1n + 1) {
+    opacity: 1;
+  }
+}
+
+
